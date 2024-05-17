@@ -9,8 +9,6 @@ export async function up(knex: Knex): Promise<void> {
       table.integer('cars_price').notNullable();
       table.string('cars_image').notNullable();
       table.string('cars_size').notNullable();
-      table.date('cars_start_rent');
-      table.date('end_rent');
       table.timestamp('created_at').defaultTo(knex.fn.now());
       table.timestamp('updated_at').defaultTo(knex.fn.now());
    }).raw(`

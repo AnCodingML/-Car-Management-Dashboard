@@ -6,8 +6,6 @@ export class carsModel extends Model {
    cars_price!: number;
    cars_image!: string;
    cars_size!: string;
-   cars_start_rent!: Date;
-   end_rent!: Date;
    created_at!: Date;
    updated_at!: Date;
 
